@@ -1,0 +1,12 @@
+doctrine:
+  dbal:
+    # "TEST_TOKEN" is typically set by ParaTest
+    # dbname_suffix: '_test%env(default::TEST_TOKEN)%'
+    dbname: orangehrmdb
+    host: localhost
+    port: 3306
+    user: root
+    password: null
+    driver: pdo_mysql
+    # if the url option is specified, it will override the above config
+    url: mysql://root@127.0.0.1:3306/orangehrmdb?serverVersion=mariadb-10.4.20

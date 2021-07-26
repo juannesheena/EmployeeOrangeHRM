@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block title %} Login {% endblock %}
+
+{% block body %}
+<div class="row">
+<div class="col-md-6 offset-md-3">
+<form action="{{ path('login')}}" method="POST">
+
+    <div class="form-group">
+        <label for="username" class="form-label mt-4">Username</label>
+        <input type="text" class="form-control" name="_username" id="username" aria-describedby="emailHelp" placeholder="Username" value={{last_username}}>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+    <div class="form-group">
+        <label for="password" class="form-label mt-4">Password</label>
+        <input type="password" class="form-control" name="_password" id="password" placeholder="Password">
+    </div>
+    <div class="d-grid gap-2 pt-5">
+    <button class="btn btn-lg btn-primary" type="submit" name="btn-success" id="btn-success">Signin</button>
+    </div>
+
+</form>
+
+{% if error %}
+<span class="text-danger has-danger pt-5">{{error.messageKey}}</span>
+{% endif %}
+</div>
+</div>
+
+{% endblock %}
