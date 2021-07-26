@@ -16,7 +16,7 @@ use App\Controller\console;
 
 class EmployeeController extends AbstractController{
     /**
-     * @Route("/")
+     * @Route("/", name="index")
      * @Method({"GET"})
     */
     public function index(){
@@ -32,6 +32,31 @@ class EmployeeController extends AbstractController{
 
         return $this->render('Employee/index.html.twig',
         array('firstname'=>$employee->getFirstname(),'lastname'=>$employee->getLastname(),'address'=>$employee->getAddress()));
+    }
+
+
+    /**
+     * @Route("/EmployeeData", name="EmployeeData")
+     * @Method({"GET"})
+    */
+    public function EmployeeData(){
+       
+        // check if the user is authenticated first
+        // returns the User object, or null if the user is not authenticated
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+        return $this->render('Employee/EmployeeData.html.twig');
+    }
+
+     /**
+     * @Route("/Leave", name="Leave")
+     * @Method({"GET"})
+    */
+    public function Leave(){
+       
+        // check if the user is authenticated first
+        // returns the User object, or null if the user is not authenticated
+        $this->denyAccessUnlessGranted('IS_AUTHENTICATED_FULLY');
+        return $this->render('Employee/Leave.html.twig');
     }
 
     
