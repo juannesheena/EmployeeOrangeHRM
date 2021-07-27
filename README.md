@@ -26,6 +26,6 @@ password - pass
 
 ### 3. Running Unit Test
 
-Step 1 - Open the Command Line from the project directory.
+Step 1 - Open the Command Line from the project directory  
 Step 2 - execute the following Command - php bin/phpunit tests/UserAssertionTest.php
 
