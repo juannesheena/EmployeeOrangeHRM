@@ -8,8 +8,7 @@ Project Link - https://github.com/juannesheena/EmployeeOrangeHRM
 Step 1 - Clone GitHub Project to the Apache Server Directory ex: C:\xampp\htdocs
 Step 2 - Install all the dependant packages of the project 
 Step 3 - Start the Apache Server
-Step 4 - Open the browser & enter the following address 
-		--->http://localhost:8000/EmployeeOrangeHRM/public
+Step 4 - Open the browser & enter the following address - http://localhost:8000/EmployeeOrangeHRM/public
 Step 5 - It will be redirected to the Login Page
 Step 6 - Use any of the following credentials to Login
 
@@ -27,6 +26,5 @@ password - pass
 
 ### 3. Running Unit Test
 
-Step 1 - Open the Command Line from the project directory 
-Step 2 - execute the following Command 
-		---> php bin/phpunit tests/UserAssertionTest.php
+Step 1 - Open the Command Line from the project directory
+Step 2 - execute the following Command - php bin/phpunit tests/UserAssertionTest.php
