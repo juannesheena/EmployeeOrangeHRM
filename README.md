@@ -5,12 +5,12 @@ Project Link - https://github.com/juannesheena/EmployeeOrangeHRM
 ### 2. Steps to access the application from the browser
  
 
-Step 1 - Clone GitHub Project to the Apache Server Directory ex: C:\xampp\htdocs
-Step 2 - Install all the dependant packages of the project 
-Step 3 - Start the Apache Server
-Step 4 - Open the browser & enter the following address - http://localhost:8000/EmployeeOrangeHRM/public
-Step 5 - It will be redirected to the Login Page
-Step 6 - Use any of the following credentials to Login
+Step 1 - Clone GitHub Project to the Apache Server Directory ex: C:\xampp\htdocs  
+Step 2 - Install all the dependant packages of the project  
+Step 3 - Start the Apache Server  
+Step 4 - Open the browser & enter the following address - http://localhost:8000/EmployeeOrangeHRM/public  
+Step 5 - It will be redirected to the Login Page  
+Step 6 - Use any of the following credentials to Login  
 
 
 ### Users Credentials
